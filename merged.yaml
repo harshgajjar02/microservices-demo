@@ -188,12 +188,6 @@ spec:
           value: "50051"
         - name: DISABLE_PROFILER
           value: "0"
-        readinessProbe:
-          grpc:
-            port: 3550
-        livenessProbe:
-          grpc:
-            port: 3550
         resources:
           requests:
             cpu: 100m
